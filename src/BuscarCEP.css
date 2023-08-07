@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body{
+  background-color: blueviolet;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.search{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: fit-content;
+  padding: 3rem;
+  background-color: rgb(49, 51, 51);
+  border-radius: 12px;
+  position: relative;
+}
+
+.search h1{
+  color: white;
+  font-size: 32px;
+}
+
+.search input{
+  resize: none;
+  outline: none;
+  height: 30px;
+  width: 100%;
+  border: 2px solid blueviolet;
+  background-color: transparent;
+  border-radius: 12px;
+  padding-left: 1rem;
+  color: white;
+}
+
+
+
+.search input::placeholder{
+  color: white;
+}
+
+.search .result{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: start;
+  gap: .5rem;
+}
+
+.search .result h2{
+  color: white;
+  font-size: 28px;
+}
+
+.search .result h3{
+  color: blueviolet;
+  font-size: 24px;
+  max-width: 50%;
+}
+
+.search .buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.search .buttons .buscar{
+  background-color: blueviolet;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.search .buttons .apagar{
+  background-color: red;
+  border: none;
+  resize: none;
+  outline: none;
+}
